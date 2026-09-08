@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 19 - Form Security</title>
+</head>
+<body>
+
+    <h1>Secure Login Form</h1>
+
+    <!-- autocomplete="off" stops the browser from suggesting saved passwords or usernames -->
+    <!-- required makes sure the user fills in both fields before submitting -->
+    <form action="#" method="post" autocomplete="off">
+
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Enter username" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <br>
+
+    <h2>Why autocomplete is turned off here:</h2>
+    <p>
+        When autocomplete is on, the browser saves and suggests previously entered usernames and passwords.
+        This can be a security risk if someone else uses the same computer.
+        They may see the saved credentials and access the account without permission.
+        Turning off autocomplete means the browser will not save or suggest any values,
+        which keeps login information more secure on shared or public computers.
+    </p>
+
+</body>
+</html>

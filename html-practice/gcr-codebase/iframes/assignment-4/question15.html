@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15 - Payment Form</title>
+</head>
+<body>
+
+    <h1>Payment Form</h1>
+
+    <form action="#" method="post">
+
+        <!-- All fields are required so user must fill everything before submitting -->
+
+        <label>Cardholder Name:</label><br>
+        <input type="text" name="cardholder_name" placeholder="Name on card" required>
+        <br><br>
+
+        <label>Card Number:</label><br>
+        <!-- maxlength restricts card number to 16 digits -->
+        <input type="text" name="card_number" placeholder="1234 5678 9012 3456" maxlength="16" required>
+        <br><br>
+
+        <label>Expiry Date:</label><br>
+        <input type="month" name="expiry_date" required>
+        <br><br>
+
+        <label>CVV:</label><br>
+        <!-- maxlength restricts CVV to 3 digits -->
+        <input type="password" name="cvv" placeholder="CVV" maxlength="3" required>
+        <br><br>
+
+        <input type="submit" value="Pay Now">
+
+    </form>
+
+</body>
+</html>

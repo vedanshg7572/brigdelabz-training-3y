@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7 - Login Form</title>
+</head>
+<body>
+
+    <h1>Login Form</h1>
+
+    <form action="#" method="post">
+
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Enter username" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <br><br>
+
+        <!-- CSRF token is a hidden security field -->
+        <!-- CSRF stands for Cross Site Request Forgery -->
+        <!-- It is a random secret value sent with the form to prove the request came from our website -->
+        <!-- Without it, attackers from other websites can trick users into submitting forms unknowingly -->
+        <input type="hidden" name="csrf_token" value="xK9mP3qL7rT2wZ5vY8nJ4hB6">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+</body>
+</html>

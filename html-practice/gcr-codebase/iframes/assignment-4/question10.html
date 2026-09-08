@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10 - Contact Form</title>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="#" method="post">
+
+        <!-- placeholder shows hint text inside the field -->
+        <!-- required makes sure the user cannot leave the field empty -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
+
+        <label>Subject:</label><br>
+        <input type="text" name="subject" placeholder="Enter the subject" required>
+        <br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" rows="5" cols="50" placeholder="Write your message here..." required></textarea>
+        <br><br>
+
+        <input type="submit" value="Send Message">
+
+    </form>
+
+</body>
+</html>

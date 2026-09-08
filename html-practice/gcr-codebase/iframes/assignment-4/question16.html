@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16 - URI Encoding</title>
+</head>
+<body>
+
+    <h1>URI Encoding Demo</h1>
+
+    <!-- URI encoding replaces special characters with percent-encoded values -->
+    <!-- Spaces are replaced with %20 and & is replaced with %26 -->
+
+    <h2>Wrong URL (not encoded):</h2>
+    <p>https://example.com/search?query=HTML &amp; CSS</p>
+
+    <h2>Correct Encoded URL:</h2>
+    <!-- %20 is used for space and %26 is used for & in URLs -->
+    <a href="https://example.com/search?query=HTML%20%26%20CSS">
+        https://example.com/search?query=HTML%20%26%20CSS
+    </a>
+
+    <br><br>
+
+    <h2>Why URI Encoding is Important</h2>
+    <p>URLs can only contain certain safe characters. Special characters like spaces, &amp;, =, and # have special meaning in URLs. So we need to encode them using percent encoding. For example a space becomes %20 and &amp; becomes %26. This makes sure the URL is read correctly by the browser and server.</p>
+
+    <h2>Common Encoding Examples</h2>
+    <p>Space = %20</p>
+    <p>&amp; = %26</p>
+    <p>= (equals) = %3D</p>
+    <p>? (question mark) = %3F</p>
+    <p># (hash) = %23</p>
+
+</body>
+</html>

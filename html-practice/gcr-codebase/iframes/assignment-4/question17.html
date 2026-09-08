@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 17 - Form with iFrame Result</title>
+</head>
+<body>
+
+    <h1>Submit Form</h1>
+
+    <!-- This form submits to result17.html which is loaded inside the iframe below -->
+    <!-- target="resultFrame" tells the browser to load the response inside the iframe with that name -->
+    <form action="result17.html" method="get" target="resultFrame">
+
+        <label>Enter your name:</label><br>
+        <input type="text" name="username" placeholder="Your name" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br>
+
+    <!-- The iframe will show the result page after form submission -->
+    <iframe name="resultFrame" width="600" height="200" title="Result Frame"></iframe>
+
+</body>
+</html>

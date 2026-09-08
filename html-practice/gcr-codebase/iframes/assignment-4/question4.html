@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4 - Frameset Layout</title>
+</head>
+
+<!-- frameset tag divides the browser window into rows or columns -->
+<!-- rows="30%,70%" means top frame takes 30% and bottom takes 70% of the screen -->
+<frameset rows="30%,70%">
+
+    <!-- Top frame shows navigation links -->
+    <frame src="nav.html" name="topFrame" title="Navigation">
+
+    <!-- Bottom frame shows welcome message -->
+    <frame src="welcome.html" name="bottomFrame" title="Main Content">
+
+    <!-- noframes is shown if the browser does not support frameset -->
+    <noframes>
+        <p>Your browser does not support frames. Please upgrade your browser.</p>
+    </noframes>
+
+</frameset>
