@@ -1,0 +1,98 @@
+/* Q9 - Card flip animation using 3D CSS transforms */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    /* centering the card on the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    color: #bdc3c7;
+}
+
+/* perspective makes the 3D flip effect look realistic */
+.scene {
+    perspective: 1000px;
+}
+
+.card {
+    width: 280px;
+    height: 350px;
+    position: relative;
+    /* preserve-3d is needed so front and back can exist in 3D space */
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+
+/* on hover the card rotates 180 degrees to show the back */
+.scene:hover .card {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    /* backface-hidden hides the element when it is facing away */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.front {
+    background-color: #2c3e50;
+    border: 2px solid #3498db;
+}
+
+.front img {
+    border-radius: 50%;
+    border: 3px solid #3498db;
+}
+
+.front h2 {
+    font-size: 1.3rem;
+}
+
+.front p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* back is pre-rotated 180 degrees so it is hidden initially */
+.back {
+    background-color: #e74c3c;
+    transform: rotateY(180deg);
+}
+
+.back h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.back p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #fde8e8;
+}

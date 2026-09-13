@@ -1,0 +1,93 @@
+/* Q3 - 3 section homepage using Flexbox */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header nav links spaced evenly */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 18px 30px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header a:hover {
+    color: #f39c12;
+}
+
+/* main 3 boxes side by side */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 50px 40px;
+    flex: 1;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 25px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+/* slight rotation on hover */
+.box:hover {
+    transform: rotate(2deg);
+}
+
+.box h2 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.box p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .box {
+        max-width: 100%;
+        width: 100%;
+    }
+}

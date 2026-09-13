@@ -1,0 +1,70 @@
+/* Q7 - CSS loading animation with bouncing circles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    /* centering everything on the page using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader-wrapper {
+    text-align: center;
+    color: white;
+}
+
+.loader-wrapper p {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+/* flexbox to put 3 circles in a row */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3498db;
+    /* circles move up and down infinitely */
+    animation: bounce 0.7s ease-in-out infinite alternate;
+}
+
+/* bounce animation - moves up using translateY */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        background-color: #3498db;
+    }
+    to {
+        transform: translateY(-25px);
+        background-color: #e74c3c;
+    }
+}
+
+/* each circle starts at a slightly different time */
+.c1 {
+    animation-delay: 0s;
+}
+
+.c2 {
+    animation-delay: 0.15s;
+}
+
+.c3 {
+    animation-delay: 0.3s;
+}

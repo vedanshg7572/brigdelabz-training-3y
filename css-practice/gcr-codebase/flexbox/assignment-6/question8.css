@@ -1,0 +1,55 @@
+/* Q8 - Photo gallery using CSS Grid with hover zoom */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* auto-fit grid - automatically adjusts columns based on screen size */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+figure {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* image scales up smoothly on hover */
+figure:hover img {
+    transform: scale(1.1);
+}
+
+figcaption {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px;
+    font-size: 0.85rem;
+}
