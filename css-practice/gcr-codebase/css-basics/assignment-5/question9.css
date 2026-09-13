@@ -1,0 +1,59 @@
+/* magazine/newspaper column layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f0eb;
+    font-family: Georgia, serif;
+    color: #333;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background-color: white;
+}
+
+/* heading spans across all columns */
+.main-heading {
+    column-span: all;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 3px double #999;
+    padding-bottom: 15px;
+}
+
+/* 3 column newspaper layout */
+.columns {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.columns p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* image floated to left so text wraps around it */
+.float-img {
+    float: left;
+    width: 150px;
+    margin: 0 15px 10px 0;
+    border-radius: 5px;
+}
+
+/* responsive - single column on small screens */
+@media (max-width: 700px) {
+    .columns {
+        column-count: 1;
+    }
+}

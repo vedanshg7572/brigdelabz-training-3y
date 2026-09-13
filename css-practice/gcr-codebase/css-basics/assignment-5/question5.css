@@ -1,0 +1,118 @@
+/* Q5 - Pricing Table CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+body h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* flexbox for three equal columns */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 35px 25px;
+    width: 260px;
+    /* equal height regardless of content */
+    display: flex;
+    flex-direction: column;
+    /* transition for smooth hover animation */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* hover effect - enlarges the card and changes background */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #eaf4fb;
+}
+
+.plan h2 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+.plan ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.plan ul li::before {
+    content: "✔ ";
+    color: #27ae60;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a252f;
+}
+
+/* popular plan highlighted with different border and background */
+.popular {
+    border: 2px solid #e74c3c;
+    background-color: #fdf2f8;
+}
+
+.popular h2 {
+    color: #c0392b;
+}
+
+.popular .btn {
+    background-color: #e74c3c;
+}
+
+.popular .btn:hover {
+    background-color: #c0392b;
+}

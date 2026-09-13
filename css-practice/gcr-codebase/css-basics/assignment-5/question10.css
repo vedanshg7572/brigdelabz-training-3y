@@ -1,0 +1,215 @@
+/* complete webpage layout - q10 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* sticky header stays on top while scrolling */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #1a1a2e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 999;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.sticky-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+.sticky-header nav a:hover {
+    color: #e74c3c;
+}
+
+/* hero section - large background with centered text */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #2c3e50;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    outline: 2px solid rgba(255,255,255,0.2);
+    padding: 10px 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+/* about section - two columns side by side */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-img img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    /* relative positioning to allow slight offset */
+    position: relative;
+    top: -5px;
+}
+
+/* services section */
+.services {
+    padding: 60px 80px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+}
+
+/* three boxes in a row using flexbox */
+.services-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 30px 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.service-box h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.service-box p {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+/* contact section */
+.contact {
+    padding: 60px 80px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    margin: 0;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #3498db;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+}

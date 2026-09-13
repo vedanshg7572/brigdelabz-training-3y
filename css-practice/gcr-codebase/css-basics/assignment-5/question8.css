@@ -1,0 +1,117 @@
+/* dashboard layout css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* header stays at top always */
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header h1 {
+    font-size: 1.4rem;
+}
+
+.top-header p {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* main layout - sidebar and content side by side */
+.layout {
+    display: flex;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+/* sidebar on left, full height */
+.sidebar {
+    width: 220px;
+    background-color: #34495e;
+    color: white;
+    padding: 25px 15px;
+    min-height: 100%;
+}
+
+.sidebar h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #95a5a6;
+    margin-bottom: 15px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.sidebar nav a:hover {
+    background-color: #2c3e50;
+}
+
+/* main content area on the right */
+.content-area {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.content-box h2 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.content-box p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* on smaller screens sidebar goes above content */
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
