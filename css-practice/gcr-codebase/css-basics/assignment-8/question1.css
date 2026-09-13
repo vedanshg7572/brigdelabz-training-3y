@@ -1,0 +1,119 @@
+/* Q1 - Pseudo-Classes Demo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 35px;
+}
+
+/* flexbox to put all demo cards in one row */
+.demo-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.demo-card h3 {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 6px;
+    font-family: monospace;
+}
+
+.demo-card p {
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* :hover - changes link color and underline on mouse over */
+.hover-link {
+    color: #3498db;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.hover-link:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* :focus - input border changes color when user clicks it */
+.focus-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.focus-input:focus {
+    border-color: #27ae60;
+}
+
+/* :active - button changes color while being pressed */
+.active-btn {
+    padding: 8px 14px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.1s;
+}
+
+.active-btn:active {
+    background-color: #f39c12;
+    transform: scale(0.96);
+}
+
+/* :nth-child(3) - selects specifically the 3rd list item */
+.nth-list {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.nth-list li {
+    padding: 4px 0;
+    color: #555;
+}
+
+.nth-list li:nth-child(3) {
+    color: #e74c3c;
+    font-weight: bold;
+    background-color: #fdebd0;
+    padding: 4px 6px;
+    border-radius: 4px;
+}

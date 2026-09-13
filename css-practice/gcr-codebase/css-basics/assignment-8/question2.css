@@ -1,0 +1,86 @@
+/* Q2 - CSS Tooltip Demo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 60px;
+}
+
+/* flexbox to center all tooltip items */
+.tooltip-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* each tooltip-wrap is relative so tooltip can be positioned above it */
+.tooltip-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.trigger {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* tooltip is hidden by default using opacity 0 */
+.tooltip {
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    /* smooth fade in on hover */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* small arrow pointing down from tooltip */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #e74c3c;
+}
+
+/* tooltip becomes visible when parent is hovered */
+.tooltip-wrap:hover .tooltip {
+    opacity: 1;
+}

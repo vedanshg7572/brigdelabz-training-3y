@@ -1,0 +1,86 @@
+/* Q8 - Box Sizing Comparison */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+/* flexbox to put both comparisons side by side and centered */
+.comparison-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    max-width: 380px;
+    text-align: left;
+}
+
+.info-block h2 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+    font-family: monospace;
+}
+
+/* default box-sizing - padding is added outside the width */
+/* both boxes have same width and padding, but default makes it bigger */
+.default-box {
+    width: 300px;
+    padding: 30px;
+    background-color: #fadbd8;
+    border: 3px solid #e74c3c;
+    /* not setting box-sizing so it uses the default content-box */
+    margin-bottom: 12px;
+}
+
+.default-box p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* border-box - padding stays inside the width */
+.borderbox-box {
+    width: 300px;
+    padding: 30px;
+    background-color: #d5f5e3;
+    border: 3px solid #27ae60;
+    /* with border-box total size stays at 300px */
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.borderbox-box p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.desc {
+    font-size: 0.88rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .comparison-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

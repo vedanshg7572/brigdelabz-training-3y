@@ -1,0 +1,108 @@
+/* Q9 - Combined Effects: Pseudo-classes + Transitions + Transforms */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+}
+
+/* flexbox to distribute cards evenly */
+.effects-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.effect-card {
+    width: 200px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    /* smooth transition for all combined effects */
+    transition: all 0.4s ease;
+    text-align: left;
+}
+
+.effect-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.effect-card p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+}
+
+/* grow card - scales up and changes background on hover */
+.grow-card {
+    background-color: #2c3e50;
+    border: 2px solid #3498db;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.grow-card:hover {
+    transform: scale(1.08);
+    background-color: #3498db;
+    box-shadow: 0 8px 20px rgba(52,152,219,0.4);
+}
+
+/* spin card - rotates and gets colored shadow on hover */
+.spin-card {
+    background-color: #4a235a;
+    border: 2px solid #8e44ad;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.spin-card:hover {
+    transform: rotate(6deg);
+    box-shadow: 0 8px 20px rgba(142,68,173,0.5);
+    background-color: #8e44ad;
+}
+
+/* lift card - moves up with a glow effect */
+.lift-card {
+    background-color: #1e4d2b;
+    border: 2px solid #27ae60;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.lift-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(39,174,96,0.5);
+    background-color: #27ae60;
+}
+
+/* slide card - skews and shifts horizontally */
+.slide-card {
+    background-color: #5d1a1a;
+    border: 2px solid #e74c3c;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.slide-card:hover {
+    transform: skew(-5deg) translateX(10px);
+    box-shadow: 0 8px 20px rgba(231,76,60,0.5);
+    background-color: #e74c3c;
+}

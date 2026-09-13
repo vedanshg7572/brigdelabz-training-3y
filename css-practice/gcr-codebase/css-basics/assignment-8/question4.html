@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - CSS Selectors Practice</title>
+    <link rel="stylesheet" href="question4.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+    </header>
+
+    <main>
+
+        <section class="section-block">
+            <h2>Element Selector</h2>
+            <p>This paragraph is styled using the element selector p.</p>
+            <p>All paragraphs on this page share the same base style.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>Class and ID Selector</h2>
+            <p class="highlight-text">This has class highlight-text applied to it.</p>
+            <p id="special-para">This has an ID special-para for unique styling.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>Attribute Selector</h2>
+            <a href="https://github.com">GitHub - HTTPS link</a><br><br>
+            <input type="text" placeholder="Styled with [type=text]">
+        </section>
+
+        <section class="section-block">
+            <h2>Combinators</h2>
+            <div class="parent-div">
+                <p>Direct child of parent-div (child combinator &gt;)</p>
+                <span><p>Nested p - descendant combinator</p></span>
+            </div>
+            <p class="first-sib">Adjacent sibling - comes right after parent-div</p>
+            <p class="gen-sib">General sibling - further below parent-div</p>
+        </section>
+
+        <section class="section-block">
+            <h2>List with Pseudo-classes</h2>
+            <ul class="styled-list">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vedansh Gupta - CSS Selectors Page</p>
+    </footer>
+
+</body>
+</html>
