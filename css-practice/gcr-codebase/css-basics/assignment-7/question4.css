@@ -1,0 +1,84 @@
+/* Q4 - Shadows and Depth Effects */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    /* text shadow adds depth to the heading */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* flexbox to put all cards in one row */
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: left;
+    /* smooth transition so shadow change on hover is animated */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* card lifts up on hover with bigger shadow */
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* soft light shadow */
+.card1 {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card1:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* deep dark shadow */
+.card2 {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.card2:hover {
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+/* colored blue glow shadow */
+.card3 {
+    box-shadow: 0 4px 15px rgba(52,152,219,0.4);
+}
+
+.card3:hover {
+    box-shadow: 0 10px 30px rgba(52,152,219,0.7);
+}

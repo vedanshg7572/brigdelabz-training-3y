@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Box Model</title>
+    <link rel="stylesheet" href="question8.css">
+</head>
+<body>
+
+    <h1>CSS Box Model Exploration</h1>
+
+    <div class="demo-wrapper">
+
+        <div class="margin-box">
+            <p>Margin (outer space)</p>
+            <div class="border-box">
+                <p>Border</p>
+                <div class="padding-box">
+                    <p>Padding (inner space)</p>
+                    <div class="content-box">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison">
+            <h2>Default box-sizing</h2>
+            <div class="default-box">
+                <p>width: 200px, padding: 20px — actual size is bigger than 200px</p>
+            </div>
+
+            <h2>border-box</h2>
+            <div class="border-box-demo">
+                <p>width: 200px, padding: 20px — actual size stays at 200px</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

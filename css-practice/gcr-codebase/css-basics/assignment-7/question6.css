@@ -1,0 +1,96 @@
+/* Q6 - CSS Transformations Showcase */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #95a5a6;
+    margin-bottom: 60px;
+    font-size: 0.95rem;
+}
+
+/* flexbox to show all 4 boxes in a row */
+.transform-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.transform-box {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    /* all transformations use smooth transition */
+    transition: all 0.4s ease;
+}
+
+.transform-box span {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.transform-box p {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* rotate box - spins 45 degrees on hover */
+.rotate-box {
+    background-color: #3498db;
+}
+
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+/* scale box - grows bigger on hover */
+.scale-box {
+    background-color: #27ae60;
+}
+
+.scale-box:hover {
+    transform: scale(1.4);
+}
+
+/* translate box - moves position on hover */
+.translate-box {
+    background-color: #e74c3c;
+}
+
+.translate-box:hover {
+    transform: translate(20px, -20px);
+}
+
+/* skew box - gets slanted on hover */
+.skew-box {
+    background-color: #8e44ad;
+}
+
+.skew-box:hover {
+    transform: skew(15deg);
+}

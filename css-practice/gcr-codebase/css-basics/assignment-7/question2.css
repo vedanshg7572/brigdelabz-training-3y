@@ -1,0 +1,64 @@
+/* Q2 - Height and Width Demo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+/* flexbox to center all boxes vertically and horizontally */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    min-height: 60vh;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+/* box 1 - fixed px values */
+.box1 {
+    width: 200px;
+    height: 150px;
+    background-color: #3498db;
+}
+
+/* box 2 - percentage and vh units with max-width */
+.box2 {
+    width: 40%;
+    height: 30vh;
+    max-width: 400px;
+    background-color: #27ae60;
+}
+
+/* box 3 - em units, min-height, overflow hidden */
+.box3 {
+    width: 15em;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: #8e44ad;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5 - CSS Selectors</title>
+    <link rel="stylesheet" href="question5.css">
+</head>
+<body>
+
+    <h1>Advanced CSS Selectors Demo</h1>
+
+    <section class="demo-section">
+        <h2>Attribute Selectors</h2>
+        <form>
+            <input type="text" placeholder="Text input - styled with [type=text]">
+            <br><br>
+            <input type="email" placeholder="Email input - different style">
+            <br><br>
+            <a href="https://google.com">HTTPS link - styled with [href^=https]</a>
+            <br><br>
+            <a href="http://example.com">HTTP link - different style</a>
+        </form>
+    </section>
+
+    <section class="demo-section">
+        <h2>Pseudo-classes</h2>
+        <ul class="my-list">
+            <li>First item - :first-child</li>
+            <li>Second item</li>
+            <li>Third item - :nth-child(3) gets a special color</li>
+            <li>Fourth item</li>
+            <li>Last item - :last-child</li>
+        </ul>
+    </section>
+
+    <section class="demo-section">
+        <h2>Pseudo-elements and Combinators</h2>
+        <div class="parent">
+            <p>This is a direct child paragraph - styled with &gt; combinator</p>
+            <div>
+                <p>This is a nested paragraph - descendant combinator</p>
+            </div>
+        </div>
+        <p class="sibling1">Adjacent sibling (+)</p>
+        <p class="sibling2">General sibling (~)</p>
+        <p class="with-before">This paragraph has a ::before element added</p>
+    </section>
+
+</body>
+</html>

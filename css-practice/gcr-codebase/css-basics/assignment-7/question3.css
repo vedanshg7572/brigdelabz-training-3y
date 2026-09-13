@@ -1,0 +1,92 @@
+/* Q3 - Gradient Backgrounds */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* linear gradient going from left to right */
+.linear-section {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: white;
+    padding: 100px 60px 60px;
+    margin-top: 65px;
+}
+
+.linear-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.linear-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/* background-attachment fixed creates a parallax effect when scrolling */
+.parallax-section {
+    background: linear-gradient(135deg, #1a1a2e, #e74c3c);
+    background-attachment: fixed;
+    color: white;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.parallax-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.parallax-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* radial gradient spreading from center outward */
+.radial-section {
+    background: radial-gradient(circle, #f39c12, #c0392b);
+    color: white;
+    padding: 80px 60px;
+}
+
+.radial-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.radial-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}

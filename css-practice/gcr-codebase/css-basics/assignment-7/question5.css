@@ -1,0 +1,124 @@
+/* Q5 - Advanced CSS Selectors Demo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 30px 40px;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.demo-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.demo-section h2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* attribute selector - selects input where type is exactly "text" */
+input[type="text"] {
+    padding: 8px 12px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* attribute selector - selects input where type is email */
+input[type="email"] {
+    padding: 8px 12px;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* attribute selector - selects links where href starts with https */
+a[href^="https"] {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* selects links where href starts with http (but not https) */
+a[href^="http"]:not([href^="https"]) {
+    color: #e74c3c;
+}
+
+/* pseudo-class - first child of the list */
+.my-list li:first-child {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* pseudo-class - last child of the list */
+.my-list li:last-child {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/* pseudo-class - nth-child selects every 3rd item */
+.my-list li:nth-child(3) {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+.my-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* child combinator > selects only direct child p of .parent */
+.parent > p {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/* descendant combinator - selects any p inside .parent (nested too) */
+.parent p {
+    background-color: #fdf2f8;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* adjacent sibling combinator + selects the element right after .sibling1 */
+.sibling1 + .sibling2 {
+    color: #e67e22;
+    margin-top: 10px;
+}
+
+/* pseudo-element ::before adds content before the element */
+.with-before::before {
+    content: "⭐ ";
+    color: #f39c12;
+}
+
+/* pseudo-element ::after adds content after the element */
+.with-before::after {
+    content: " ✔";
+    color: #27ae60;
+}
+
+.with-before {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}

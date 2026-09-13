@@ -1,0 +1,90 @@
+/* Q1 - Borders and Padding Demo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 35px;
+}
+
+/* flexbox to put boxes in one row */
+.box-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    /* smooth transition for hover border color change */
+    transition: border-color 0.3s ease;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* solid border with small padding */
+.solid-box {
+    border: 3px solid #3498db;
+    padding: 10px;
+}
+
+.solid-box:hover {
+    border-color: #e74c3c;
+}
+
+/* dashed border with medium padding */
+.dashed-box {
+    border: 3px dashed #27ae60;
+    padding: 20px;
+}
+
+.dashed-box:hover {
+    border-color: #e74c3c;
+}
+
+/* double border with large padding */
+.double-box {
+    border: 5px double #8e44ad;
+    padding: 30px 15px;
+}
+
+.double-box:hover {
+    border-color: #e74c3c;
+}
+
+/* groove border with rounded corners */
+.groove-box {
+    border: 5px groove #e67e22;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.groove-box:hover {
+    border-color: #e74c3c;
+}
