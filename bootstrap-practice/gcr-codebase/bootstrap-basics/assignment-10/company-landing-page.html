@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 - Company Landing Page</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="company-landing-page.css">
+</head>
+<body>
+
+    <!-- navbar using Bootstrap's fixed-top and navbar classes -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechStartup</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Build Better Products Faster</h1>
+            <p class="lead mt-3">We help startups and businesses build scalable web applications using modern technologies.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-4 me-2">Get Started</a>
+            <a href="#" class="btn btn-outline-light btn-lg mt-4">Learn More</a>
+        </div>
+    </header>
+
+    <!-- features section using Bootstrap grid -->
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">What We Offer</h2>
+                <!-- row and col for 3-column layout -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center shadow-sm">
+                            <h4>Web Design</h4>
+                            <p class="text-muted">We create clean, modern, and responsive websites for all types of businesses.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center shadow-sm">
+                            <h4>App Development</h4>
+                            <p class="text-muted">We build mobile-friendly web applications using React and Node.js stack.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center shadow-sm">
+                            <h4>SEO & Marketing</h4>
+                            <p class="text-muted">We help your website rank higher on Google and reach more customers online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 TechStartup. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS bundle (needed for navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 - Task Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="task-tracker.css">
+</head>
+<body class="bg-light">
+
+    <!-- header with badge showing pending task count -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0">Task Manager</h1>
+            <!-- badge showing number of pending tasks -->
+            <span class="badge bg-warning text-dark fs-6">5 Pending</span>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">My Tasks</h5>
+                    </div>
+
+                    <!-- list-group for task list -->
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Complete Bootstrap Assignment 10
+                            <!-- badge with bg-danger for High priority -->
+                            <span class="badge bg-danger">High</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Push all assignments to GitHub
+                            <span class="badge bg-danger">High</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Review CSS Grid notes
+                            <!-- badge with bg-warning for Medium priority -->
+                            <span class="badge bg-warning text-dark">Medium</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Practice Flexbox exercises
+                            <span class="badge bg-warning text-dark">Medium</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Read about JavaScript basics
+                            <!-- badge with bg-success for Low priority -->
+                            <span class="badge bg-success">Low</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Update portfolio website
+                            <span class="badge bg-success">Low</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- completed button with embedded badge -->
+                <div class="text-center mt-4">
+                    <button class="btn btn-success">
+                        Mark Selected as Done
+                        <!-- badge inside button showing completed count -->
+                        <span class="badge bg-white text-success ms-2">3 Done</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2024 Task Tracker App</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

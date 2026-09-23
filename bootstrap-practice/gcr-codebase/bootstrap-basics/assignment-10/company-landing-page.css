@@ -1,0 +1,25 @@
+/* Q1 - Company Landing Page - Custom CSS on top of Bootstrap */
+
+/* push content below fixed navbar */
+body {
+    padding-top: 70px;
+}
+
+/* hero section with dark gradient background */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 100px 20px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+/* card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12) !important;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5 - Blog Homepage</title>
+    <!-- Google Font for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog-homepage.css">
+</head>
+<body>
+
+    <header class="site-header text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Vedansh's Dev Blog</h1>
+            <p class="lead">Notes, tutorials, and thoughts on web development</p>
+            <a href="#" class="btn btn-custom mt-3">Read Latest Posts</a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <h2 class="text-center mb-4 section-heading">Latest Posts</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card h-100 blog-card shadow-sm">
+                    <img src="blog1.jpg" class="card-img-top blog-img" alt="HTML Post">
+                    <div class="card-body">
+                        <span class="badge bg-custom mb-2">HTML</span>
+                        <h4 class="card-title">Getting Started with Semantic HTML</h4>
+                        <p class="card-text text-muted">In this post I explain why semantic HTML tags like header, section, and article are better than just using divs everywhere. They improve SEO and accessibility.</p>
+                        <a href="#" class="btn btn-custom btn-sm">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted small">September 5, 2024</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 blog-card shadow-sm">
+                    <img src="blog2.jpg" class="card-img-top blog-img" alt="CSS Post">
+                    <div class="card-body">
+                        <span class="badge bg-custom mb-2">CSS</span>
+                        <h4 class="card-title">CSS Flexbox in 10 Minutes</h4>
+                        <p class="card-text text-muted">Flexbox was confusing to me at first. But once I understood the main axis and cross axis concept, everything clicked. Here is a quick guide that helped me learn it fast.</p>
+                        <a href="#" class="btn btn-custom btn-sm">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted small">September 10, 2024</div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-custom text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Vedansh's Dev Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

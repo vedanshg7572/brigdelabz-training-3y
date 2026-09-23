@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 - Blog Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog-pagination.css">
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h1 class="h3 mb-0">Web Dev Blog — All Posts</h1>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- blog post list -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Introduction to HTML5</h5>
+                        <p class="text-muted small">September 1, 2024</p>
+                        <p>A beginner-friendly guide to learning HTML5 from scratch using semantic tags and proper page structure.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>CSS Flexbox Guide</h5>
+                        <p class="text-muted small">September 5, 2024</p>
+                        <p>Learn how to use CSS Flexbox to build responsive layouts without complicated float hacks or positioning tricks.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Bootstrap 5 Basics</h5>
+                        <p class="text-muted small">September 10, 2024</p>
+                        <p>My notes from learning Bootstrap 5. I cover the grid system, utilities, components and how to customize it.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5>Git and GitHub for Beginners</h5>
+                        <p class="text-muted small">September 14, 2024</p>
+                        <p>Everything I learned about using Git for version control and pushing my code to GitHub repositories.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap pagination component, centered using justify-content-center -->
+        <nav aria-label="Blog navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- pager for older/newer posts -->
+        <div class="d-flex justify-content-between mt-3">
+            <a href="#" class="btn btn-outline-secondary">&larr; Older Posts</a>
+            <a href="#" class="btn btn-outline-secondary">Newer Posts &rarr;</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2024 Web Dev Blog</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

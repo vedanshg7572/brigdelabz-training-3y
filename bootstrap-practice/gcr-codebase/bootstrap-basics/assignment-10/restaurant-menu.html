@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="restaurant-menu.css">
+</head>
+<body>
+
+    <header class="bg-danger text-white text-center py-4">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Spice Garden Restaurant</h1>
+            <!-- .lead makes text slightly larger and lighter -->
+            <p class="lead">Authentic Indian Cuisine | Est. 2010</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- food image with caption using Bootstrap figure -->
+        <div class="text-center mb-5">
+            <figure class="figure">
+                <img src="food.jpg" class="img-fluid rounded shadow" alt="Featured Dish" style="max-height: 300px;">
+                <figcaption class="figure-caption text-center mt-2 fs-6">Today's Special: Dal Makhani with Naan</figcaption>
+            </figure>
+        </div>
+
+        <!-- Bootstrap table for menu -->
+        <h2 class="text-center mb-3">Today's Menu</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Category</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>Paneer Tikka</td>
+                        <td>Rs. 220</td>
+                    </tr>
+                    <tr>
+                        <td>Starter</td>
+                        <td>Veg Spring Rolls</td>
+                        <td>Rs. 180</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Dal Makhani</td>
+                        <td>Rs. 280</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Butter Chicken</td>
+                        <td>Rs. 350</td>
+                    </tr>
+                    <tr>
+                        <td>Bread</td>
+                        <td>Garlic Naan</td>
+                        <td>Rs. 60</td>
+                    </tr>
+                    <tr>
+                        <td>Dessert</td>
+                        <td>Gulab Jamun</td>
+                        <td>Rs. 120</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- list group for Chef's Specials -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h3 class="text-center mb-3">Chef's Specials</h3>
+                <!-- list-group is a Bootstrap component for styled lists -->
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Rajasthani Thali
+                        <span class="badge bg-danger">Rs. 499</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Hyderabadi Biryani
+                        <span class="badge bg-danger">Rs. 380</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Peshwari Mutton Curry
+                        <span class="badge bg-danger">Rs. 420</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Chettinad Fish Fry
+                        <span class="badge bg-danger">Rs. 360</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-danger text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2024 Spice Garden. Phone: 9876543210</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

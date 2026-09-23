@@ -1,0 +1,15 @@
+/* Q3 - Product Catalog Custom CSS */
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}

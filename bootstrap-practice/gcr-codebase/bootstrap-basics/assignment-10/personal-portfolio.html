@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="personal-portfolio.css">
+</head>
+<body class="bg-light">
+
+    <!-- header with name and tagline using Bootstrap text utilities -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Vedansh Gupta</h1>
+            <p class="lead text-secondary">Web Development Student | BridgeLabz | Noida</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- profile image section - text-center centers image and text -->
+        <div class="text-center mb-5">
+            <!-- img-fluid makes image responsive, rounded-circle makes it circular -->
+            <img src="profile.jpg" alt="Vedansh Gupta" class="img-fluid rounded-circle profile-pic mb-3">
+            <h2 class="fw-bold">Hi, I am Vedansh!</h2>
+            <p class="text-muted px-5">I am a BCA student at GLA University, Mathura. I am learning web development at BridgeLabz. I love building websites using HTML, CSS, Bootstrap and JavaScript.</p>
+
+            <!-- two buttons with Bootstrap btn classes -->
+            <a href="#" class="btn btn-primary mt-3 me-2">Hire Me</a>
+            <a href="#" class="btn btn-outline-secondary mt-3">Download CV</a>
+        </div>
+
+        <!-- contact form using Bootstrap form-control -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm p-4">
+                    <h4 class="mb-4 text-center">Contact Me</h4>
+                    <form>
+                        <!-- mb-3 adds bottom margin between form fields -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Vedansh Gupta</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

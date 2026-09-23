@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 - Notifications Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="notifications-dashboard.css">
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="h4 mb-0">Notification Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="card shadow-sm p-4 mb-4">
+            <h4 class="mb-4">Your Notifications</h4>
+
+            <!-- success alert - green for positive messages -->
+            <div class="alert alert-success" role="alert">
+                <strong>New Message!</strong> You have 3 new messages from your mentor. Click to read them.
+            </div>
+
+            <!-- info alert - blue for tips and information -->
+            <div class="alert alert-info" role="alert">
+                <strong>Tip:</strong> Bootstrap 5 removed jQuery as a dependency. Now it works with vanilla JavaScript only.
+            </div>
+
+            <!-- danger alert - red for warnings -->
+            <div class="alert alert-danger" role="alert">
+                <strong>Warning!</strong> Your subscription will expire in 3 days. Please renew to continue access.
+            </div>
+
+            <!-- dismissible alert - user can close it with the X button -->
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Heads up!</strong> Please update your profile information. Some fields are missing.
+                <!-- data-bs-dismiss closes the alert when clicked -->
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+        </div>
+
+        <!-- summary well - a bg-light bordered section for summary info -->
+        <div class="bg-light border rounded p-4 shadow-sm">
+            <h5 class="mb-3">Notification Summary</h5>
+            <ul class="mb-0">
+                <li>Total notifications: <strong>4</strong></li>
+                <li>Unread messages: <strong>3</strong></li>
+                <li>Pending actions: <strong>2</strong></li>
+                <li>Last checked: <strong>Today, 2:30 PM</strong></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2024 Dashboard Panel</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

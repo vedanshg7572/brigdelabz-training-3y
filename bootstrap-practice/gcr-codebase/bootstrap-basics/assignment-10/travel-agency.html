@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="travel-agency.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0 text-warning fw-bold">🌍 WanderLust Travels</h1>
+            <nav>
+                <a href="#" class="text-white me-3 text-decoration-none">Destinations</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Packages</a>
+                <a href="#" class="text-white text-decoration-none">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Bootstrap Carousel with 3 slides -->
+        <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- slide 1 with custom interval of 4 seconds -->
+                <div class="carousel-item active slide-goa" data-bs-interval="4000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Goa, India</h3>
+                        <p>Golden beaches, vibrant nightlife, and amazing seafood. Perfect for a weekend getaway.</p>
+                        <a href="#" class="btn btn-warning">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- slide 2 with 3 second interval -->
+                <div class="carousel-item slide-manali" data-bs-interval="3000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Manali, Himachal Pradesh</h3>
+                        <p>Snow-capped mountains, adventure sports, and peaceful valleys. A paradise for nature lovers.</p>
+                        <a href="#" class="btn btn-warning">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- slide 3 with 5 second interval -->
+                <div class="carousel-item slide-kerala" data-bs-interval="5000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Serene houseboat rides, lush greenery, and authentic South Indian cuisine. God's own country.</p>
+                        <a href="#" class="btn btn-warning">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+        <!-- progress bar section below carousel -->
+        <section class="container py-5">
+            <h2 class="text-center mb-4">Booking Progress</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <p class="mb-1">Goa Package — <strong>70% Seats Booked</strong></p>
+                    <!-- progress-bar-striped and progress-bar-animated adds diagonal stripes that move -->
+                    <div class="progress mb-4" style="height: 22px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark fw-bold"
+                             style="width: 70%;">70%</div>
+                    </div>
+
+                    <p class="mb-1">Manali Package — <strong>45% Seats Booked</strong></p>
+                    <div class="progress mb-4" style="height: 22px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                             style="width: 45%;">45%</div>
+                    </div>
+
+                    <p class="mb-1">Kerala Package — <strong>90% Seats Booked</strong></p>
+                    <div class="progress mb-4" style="height: 22px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                             style="width: 90%;">90%</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h5 class="text-warning">Contact Us</h5>
+            <p class="mb-1">Email: info@wanderlust.in</p>
+            <p class="mb-1">Phone: +91 98765 43210</p>
+            <p class="mb-0">&copy; 2024 WanderLust Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

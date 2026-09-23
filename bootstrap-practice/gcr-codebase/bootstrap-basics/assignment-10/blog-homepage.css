@@ -1,0 +1,57 @@
+/* Q5 - Custom Themed Blog Homepage */
+/* overriding Bootstrap theme variables for custom colors */
+
+:root {
+    --bs-primary: #6f42c1;
+    --bs-font-sans-serif: 'Merriweather', Georgia, serif;
+}
+
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    background-color: #f8f5ff;
+}
+
+/* custom header background using our theme color */
+.site-header {
+    background: linear-gradient(135deg, #6f42c1, #3d1a78);
+}
+
+.section-heading {
+    color: #6f42c1;
+}
+
+/* custom colored button using theme variable */
+.btn-custom {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #5a2d9e;
+    color: white;
+}
+
+/* custom badge color */
+.bg-custom {
+    background-color: #6f42c1 !important;
+}
+
+.blog-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-top: 3px solid #6f42c1;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer-custom {
+    background-color: #3d1a78;
+}

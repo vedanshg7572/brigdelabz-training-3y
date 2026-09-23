@@ -1,0 +1,26 @@
+/* Q8 - Pricing Plans Custom CSS */
+
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Pro plan slightly bigger to stand out */
+.popular-card {
+    transform: scale(1.04);
+}
+
+.popular-card:hover {
+    transform: scale(1.04) translateY(-8px);
+}

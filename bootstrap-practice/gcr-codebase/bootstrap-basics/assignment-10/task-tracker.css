@@ -1,0 +1,9 @@
+/* Q7 - Task Tracker - custom CSS */
+
+.list-group-item {
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
