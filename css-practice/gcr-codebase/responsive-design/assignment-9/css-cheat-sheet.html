@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 - CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="css-cheat-sheet.css">
+</head>
+<body>
+
+    <h1>Responsive CSS Cheat Sheet</h1>
+
+    <div class="cheat-grid">
+
+        <div class="cheat-box">
+            <h2>CSS Filters</h2>
+            <p>Used to apply visual effects to images and elements.</p>
+            <code>filter: grayscale(100%);<br>filter: blur(5px);<br>filter: sepia(80%);</code>
+        </div>
+
+        <div class="cheat-box">
+            <h2>Media Queries</h2>
+            <p>Used to apply different CSS rules at different screen widths.</p>
+            <code>@media (max-width: 768px) {<br>&nbsp;&nbsp;body { font-size: 14px; }<br>}</code>
+        </div>
+
+        <div class="cheat-box">
+            <h2>Responsive Design</h2>
+            <p>Makes websites look good on all screen sizes using flexible layouts.</p>
+            <code>display: flex;<br>flex-wrap: wrap;<br>grid-template-columns: 1fr 1fr;</code>
+        </div>
+
+        <div class="cheat-box">
+            <h2>Responsive Typography</h2>
+            <p>Font sizes that scale with the viewport using clamp() and vw units.</p>
+            <code>font-size: clamp(1rem, 2vw, 1.5rem);<br>font-size: 4vw;</code>
+        </div>
+
+        <div class="cheat-box">
+            <h2>Flexbox</h2>
+            <p>One-dimensional layout system for rows or columns.</p>
+            <code>display: flex;<br>justify-content: center;<br>align-items: center;</code>
+        </div>
+
+        <div class="cheat-box">
+            <h2>CSS Grid</h2>
+            <p>Two-dimensional layout system for rows and columns together.</p>
+            <code>display: grid;<br>grid-template-columns: repeat(3, 1fr);<br>gap: 20px;</code>
+        </div>
+
+    </div>
+
+</body>
+</html>

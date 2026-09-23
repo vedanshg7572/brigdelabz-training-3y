@@ -1,0 +1,110 @@
+/* Q5 - Filter Cards with Fade-in Animation */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+/* fade-in animation when page loads */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* flexbox to put cards in a row */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    /* all cards fade in on load */
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+/* each card starts animation with a slight delay */
+.profile-card:nth-child(1) { animation-delay: 0s; }
+.profile-card:nth-child(2) { animation-delay: 0.15s; }
+.profile-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* on hover card lifts up and filter is removed */
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    /* grayscale filter on image by default */
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+
+/* filter removed when card is hovered */
+.profile-card:hover .profile-img {
+    filter: none;
+}
+
+.profile-card h2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 0.85rem;
+    color: #3498db;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.profile-card p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* stack vertically below 800px */
+@media (max-width: 800px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 - Design Principles</title>
+    <link rel="stylesheet" href="design-principles.css">
+</head>
+<body>
+
+    <h1>Core Principles of Responsive Design</h1>
+
+    <div class="principles-grid">
+
+        <div class="principle-box">
+            <h2>Fluid Layouts</h2>
+            <p>Fluid layouts use percentage-based widths instead of fixed pixels. This means the layout stretches or shrinks to fit the available screen space.</p>
+            <code>width: 100%;<br>max-width: 1200px;<br>margin: 0 auto;</code>
+        </div>
+
+        <div class="principle-box">
+            <h2>Flexible Media</h2>
+            <p>Images and videos should resize with the layout. Using max-width: 100% ensures media never overflows its container.</p>
+            <code>img {<br>&nbsp;&nbsp;max-width: 100%;<br>&nbsp;&nbsp;height: auto;<br>}</code>
+        </div>
+
+        <div class="principle-box">
+            <h2>Breakpoints</h2>
+            <p>Breakpoints are specific screen widths where the layout changes. We use media queries to apply different CSS rules at each breakpoint.</p>
+            <code>@media (max-width: 768px) {<br>&nbsp;&nbsp;.container {<br>&nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>&nbsp;&nbsp;}<br>}</code>
+        </div>
+
+    </div>
+
+</body>
+</html>

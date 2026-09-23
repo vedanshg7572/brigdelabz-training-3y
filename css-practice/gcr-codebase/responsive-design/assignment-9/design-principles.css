@@ -1,0 +1,89 @@
+/* Q9 - Responsive Design Principles Summary */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 35px;
+}
+
+/* grid - 3 equal boxes */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.principle-box {
+    background-color: white;
+    padding: 28px 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 3px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+/* on hover, background changes to gradient and text color changes */
+.principle-box:hover {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(52,152,219,0.3);
+}
+
+.principle-box h2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.principle-box:hover h2 {
+    color: white;
+}
+
+.principle-box p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    transition: color 0.3s;
+}
+
+.principle-box:hover p {
+    color: #eaf0fb;
+}
+
+/* code snippet */
+.principle-box code {
+    display: block;
+    background-color: #1a1a2e;
+    color: #f39c12;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    line-height: 1.7;
+    font-family: monospace;
+}
+
+/* single column below 600px */
+@media (max-width: 600px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+}

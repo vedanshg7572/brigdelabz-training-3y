@@ -1,0 +1,90 @@
+/* Q8 - Filter Comparison Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+}
+
+/* two images side by side on desktop */
+.comparison-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.img-block {
+    width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    background-color: #16213e;
+}
+
+.img-block img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    /* smooth transition when filter fades away on hover */
+    transition: filter 0.5s ease;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 0.85rem;
+    color: #bdc3c7;
+}
+
+/* original image has no filter */
+.original-img {
+    filter: none;
+}
+
+/* filtered image has contrast and sepia applied */
+.filtered-img {
+    filter: contrast(180%) sepia(60%);
+}
+
+/* brightness filter variant */
+.brightness-filter {
+    filter: brightness(50%) contrast(150%);
+}
+
+/* filter fades away when hovered */
+.filtered-img:hover {
+    filter: none;
+}
+
+/* below 700px images stack vertically with captions */
+@media (max-width: 700px) {
+    .comparison-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-block {
+        width: 90%;
+    }
+}
