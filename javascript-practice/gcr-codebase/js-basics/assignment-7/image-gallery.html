@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 - Image Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; background: #1a1a2e; }
+        h2 { color: white; text-align: center; margin-bottom: 25px; }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 700px; margin: 0 auto; }
+        .gallery img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: transform 0.25s, box-shadow 0.25s; }
+        .gallery img:hover { transform: scale(1.05); box-shadow: 0 8px 25px rgba(0,0,0,0.5); }
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); justify-content: center; align-items: center; z-index: 999; }
+        .modal-overlay.open { display: flex; }
+        .modal-box { background: white; padding: 15px; border-radius: 12px; max-width: 500px; width: 90%; text-align: center; }
+        .modal-box img { width: 100%; border-radius: 8px; }
+        .modal-close { margin-top: 12px; padding: 8px 20px; background: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    <div class="gallery" id="gallery">
+        <img src="https://picsum.photos/seed/a1/300/200" alt="Image 1">
+        <img src="https://picsum.photos/seed/b2/300/200" alt="Image 2">
+        <img src="https://picsum.photos/seed/c3/300/200" alt="Image 3">
+        <img src="https://picsum.photos/seed/d4/300/200" alt="Image 4">
+        <img src="https://picsum.photos/seed/e5/300/200" alt="Image 5">
+        <img src="https://picsum.photos/seed/f6/300/200" alt="Image 6">
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" id="modalBox">
+            <img id="modalImg" src="" alt="Preview">
+            <button class="modal-close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="image-gallery.js"></script>
+</body>
+</html>

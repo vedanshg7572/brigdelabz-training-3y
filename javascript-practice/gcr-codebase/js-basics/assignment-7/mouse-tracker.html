@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q7 - Mouse Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 30px; background: #f0f2f5; }
+        h2 { color: #2c3e50; margin-bottom: 10px; }
+        p { color: #555; margin-bottom: 20px; font-size: 0.95rem; }
+        #tracker { width: 400px; height: 400px; background: #2c3e50; border-radius: 12px; position: relative; cursor: crosshair; overflow: hidden; }
+        #coords { margin-top: 15px; font-size: 1.1rem; color: #2c3e50; font-weight: bold; }
+        .dot { position: absolute; width: 12px; height: 12px; background: red; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+    </style>
+</head>
+<body>
+    <h2>Mouse Path Tracker</h2>
+    <p>Move mouse inside the box. Double-click to drop a red dot.</p>
+    <div id="tracker"></div>
+    <div id="coords">X: 0 | Y: 0</div>
+    <script src="mouse-tracker.js"></script>
+</body>
+</html>
