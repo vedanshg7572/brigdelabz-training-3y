@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q2 - Student Form Validator</title>
+    <link rel="stylesheet" href="student-form-validator.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Student Registration</h2>
+
+    <div class="field">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <span class="msg" id="nameMsg"></span>
+    </div>
+
+    <div class="field">
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <span class="msg" id="emailMsg"></span>
+    </div>
+
+    <div class="field">
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="10-digit phone number">
+        <span class="msg" id="phoneMsg"></span>
+    </div>
+
+    <div class="field">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Create password">
+        <span class="msg" id="passwordMsg"></span>
+    </div>
+
+    <button onclick="validateForm()">Register</button>
+</div>
+
+<script src="student-form-validator.js"></script>
+</body>
+</html>
